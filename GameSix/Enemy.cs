@@ -21,5 +21,7 @@ namespace GameSix
         {
             return name;
         }
+
+        public void TakeDamage(float damage)
     }
 }
