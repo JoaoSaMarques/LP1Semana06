@@ -35,7 +35,7 @@ namespace GameSix
             }
 
             //Tells you the enemies' names
-            Console.WriteLine("Enemy Names:");
+            Console.WriteLine("\nEnemy Names: ");
             //For each enemy in the list
             foreach (Enemy enemy in enemies)
             {
@@ -46,7 +46,7 @@ namespace GameSix
             //Test method
             //Make Goblin enemy
             Enemy Goblin = new Enemy("Goblin");
-            Console.WriteLine("Goblin");
+            Console.WriteLine("\nGoblin: ");
             //Print initial Health
             Console.WriteLine($"IHealth: {Goblin.GetHealth()}"); //should be 100
             //Print initial shield
