@@ -27,7 +27,7 @@ namespace GameSix
             shield -= damage;
             if (shield < 0)
             {
-
+                float damageStillToInflict = -shield;
             }
         }
     }
