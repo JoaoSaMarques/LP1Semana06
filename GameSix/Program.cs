@@ -12,6 +12,10 @@ namespace GameSix
 
             Enemy[] enemies = new Enemy[EnemyNum];
 
+            for (int i = 0; i < EnemyNum; i++)
+            {
+
+            }
         }
     }
 }
