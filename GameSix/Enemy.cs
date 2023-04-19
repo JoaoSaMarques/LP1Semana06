@@ -63,7 +63,8 @@ namespace GameSix
                 //If health is below 0 then have it be 0
                 if (health < 0) health = 0;
             }
-
+        }
+        
         //Pickup Powerup
         public void PickupPowerUp(PowerUp powerUp, float value)
         {

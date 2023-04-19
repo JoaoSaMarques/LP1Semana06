@@ -46,6 +46,7 @@ namespace GameSix
             //Test method
             //Make Goblin enemy
             Enemy Goblin = new Enemy("Goblin");
+            Console.WriteLine("Goblin");
             //Print initial Health
             Console.WriteLine($"IHealth: {Goblin.GetHealth()}"); //should be 100
             //Print initial shield
