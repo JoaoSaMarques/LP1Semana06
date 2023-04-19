@@ -29,6 +29,7 @@ namespace GameSix
             {
                 float damageStillToInflict = -shield;
                 shield = 0;
+                health -= damageStillToInflict;
             }
         }
     }
