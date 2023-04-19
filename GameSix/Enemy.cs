@@ -29,7 +29,7 @@ namespace GameSix
 
         public string GetShield()
         {
-
+            return shield;
         }
 
         public void TakeDamage(float damage)
