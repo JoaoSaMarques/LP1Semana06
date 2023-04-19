@@ -6,5 +6,6 @@ namespace GameSix
     {
         private string name;
         private float health;
+        private float shield;
     }
 }
