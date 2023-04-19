@@ -33,7 +33,8 @@ namespace GameSix
             //For each enemy in the list
             foreach (Enemy enemy in enemies)
             {
-                
+                //Get enemy name and return it
+                Console.WriteLine(enemy.GetName());
             }
         }
     }
