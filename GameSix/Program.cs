@@ -7,7 +7,7 @@ namespace GameSix
         Health,
         Shield
     }
-    
+
     class Program
     {
         static void Main(string[] args)
@@ -42,6 +42,21 @@ namespace GameSix
                 //Get enemy name and return it
                 Console.WriteLine(enemy.GetName());
             }
+
+            //Test method
+            //Make Goblin enemy
+            Enemy Goblin = new Enemy("Goblin");
+            //Print initial Health
+            Console.WriteLine($"IHealth: {Goblin.GetHealth()}"); //should be 100
+            //Print initial shield
+            Console.WriteLine($"IShield: {Goblin.GetShield()}"); //should be 0
+
+            //Take 20 damage
+            Goblin.TakeDamage(20);
+            //Print health after damage
+            Console.WriteLine($"DHealth: {Goblin.GetHealth()}"); //should be 80
+            //Print shield after damage
+            Console.WriteLine($"DShield: {Goblin.GetShield()}"); //should be 0
         }
     }
 }
