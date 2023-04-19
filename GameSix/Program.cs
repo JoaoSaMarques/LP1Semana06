@@ -19,6 +19,8 @@ namespace GameSix
             {
                 //Every i enter a name and then +1 until it reaches EnemyNum
                 Console.Write($"Enter the name of enemy #{i+1}: ");
+                //Enter name of enemy
+                string name = Console.ReadLine();
 
             }
         }
