@@ -33,14 +33,14 @@ namespace GameSix
         }
 
         //Health checker
-        public string GetHealth()
+        public float GetHealth()
         {
             //Tells you the health amount
             return health;
         }
 
         //Shield checker
-        public string GetShield()
+        public float GetShield()
         {
             //Tells you the shield amount
             return shield;
