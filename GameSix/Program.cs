@@ -21,7 +21,11 @@ namespace GameSix
                 Console.Write($"Enter the name of enemy #{i+1}: ");
                 //Enter name of enemy
                 string name = Console.ReadLine();
-
+                
+                //Create new enemy with name
+                Enemy foe = new Enemy(name);
+                //Enemies = foe
+                enemies[i] = foe;
             }
         }
     }
