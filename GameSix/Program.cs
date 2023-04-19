@@ -54,7 +54,7 @@ namespace GameSix
             Console.WriteLine($"IShield: {Goblin.GetShield()}"); //should be 0
 
             //Make enemy pickup the powerup for health
-            goblin.PickupPowerUp(PowerUp.Health, 20);
+            Goblin.PickupPowerUp(PowerUp.Health, 20);
             //Write health after powerup
             Console.WriteLine($"Health powerup: {Goblin.GetHealth()}");
             //Write shield after powerup
