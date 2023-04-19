@@ -24,7 +24,7 @@ namespace GameSix
 
         public string GetHealth()
         {
-            
+            return health;
         }
 
         public void TakeDamage(float damage)
