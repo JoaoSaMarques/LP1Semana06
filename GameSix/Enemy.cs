@@ -28,7 +28,8 @@ namespace GameSix
         //Name setter
         public void SetName(string name)
         {
-
+            //Remove leading and trailing spaces
+            this.name = name.Trim();
         }
 
         //Health checker
