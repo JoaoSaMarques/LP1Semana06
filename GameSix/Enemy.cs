@@ -25,6 +25,12 @@ namespace GameSix
             return name;
         }
 
+        //Name setter
+        public void SetName(string name)
+        {
+
+        }
+
         //Health checker
         public string GetHealth()
         {
