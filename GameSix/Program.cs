@@ -27,6 +27,9 @@ namespace GameSix
                 //Enemies = foe
                 enemies[i] = foe;
             }
+
+            //Tells you the enemies' names
+            Console.WriteLine("Enemy Names:");
         }
     }
 }
