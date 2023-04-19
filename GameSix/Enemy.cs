@@ -64,26 +64,26 @@ namespace GameSix
                 if (health < 0) health = 0;
             }
 
-            //Pickup Powerup
-            public void PickupPowerUp(PowerUp powerUp, float value)
+        //Pickup Powerup
+        public void PickupPowerUp(PowerUp powerUp, float value)
+        {
+            //If powerup is for health
+            if (powerUp == PowerUp.Health)
             {
-                //If powerup is for health
-                if (powerUp == PowerUp.Health)
-                {
-                    //Increase health value
-                    health += value;
-                    //Limit health to 100
-                    if (health > 100) health = 100;
-                }
-                //If powerup is for shield 
-                else if (powerUp == PowerUp.Shield)
-                {
-                    //Increase shield value
-                    shield += value;
-                    //Limit shield to 100
-                    if (shield > 100) shield = 100;
-                }
+                //Increase health value
+                health += value;
+                //Limit health to 100
+                if (health > 100) health = 100;
             }
+            //If powerup is for shield 
+            else if (powerUp == PowerUp.Shield)
+            {
+                //Increase shield value
+                shield += value;
+                //Limit shield to 100
+                if (shield > 100) shield = 100;
+            }
+            
         }
     }
 }
