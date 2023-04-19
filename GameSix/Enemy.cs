@@ -22,6 +22,11 @@ namespace GameSix
             return name;
         }
 
+        public string GetHealth()
+        {
+            
+        }
+
         public void TakeDamage(float damage)
         {
             shield -= damage;
