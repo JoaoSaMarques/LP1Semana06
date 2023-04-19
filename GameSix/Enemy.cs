@@ -23,5 +23,8 @@ namespace GameSix
         }
 
         public void TakeDamage(float damage)
+        {
+            shield -= damage;
+        }
     }
 }
