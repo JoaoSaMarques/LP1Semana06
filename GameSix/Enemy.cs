@@ -8,7 +8,14 @@ namespace GameSix
         private string name;
         private float health;
         private float shield;
+        private static int powerUpCount;
     
+        //Static
+        static Enemy()
+        {
+            //Collected powerups = 0
+            powerUpCount = 0;
+        }
 
         //Constructor
         public Enemy(string name)
@@ -46,6 +53,11 @@ namespace GameSix
             return shield;
         }
 
+        public static int GetPowerUpCount()
+        {
+            return powerUpCount;
+        }
+
         //When taking damage
         public void TakeDamage(float damage)
         {
@@ -64,7 +76,7 @@ namespace GameSix
                 if (health < 0) health = 0;
             }
         }
-        
+
         //Pickup Powerup
         public void PickupPowerUp(PowerUp powerUp, float value)
         {
@@ -84,7 +96,9 @@ namespace GameSix
                 //Limit shield to 100
                 if (shield > 100) shield = 100;
             }
-            
+
+            //Increase powerup collected
+            powerUpCount++;
         }
     }
 }

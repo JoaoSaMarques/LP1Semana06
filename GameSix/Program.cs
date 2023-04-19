@@ -46,11 +46,19 @@ namespace GameSix
             //Test method
             //Make Goblin enemy
             Enemy Goblin = new Enemy("Goblin");
-            Console.WriteLine("\nGoblin: ");
+            //Get goblin's name
+            Console.WriteLine($"Default name: {goblin.GetName()}");
             //Print initial Health
             Console.WriteLine($"IHealth: {Goblin.GetHealth()}"); //should be 100
             //Print initial shield
             Console.WriteLine($"IShield: {Goblin.GetShield()}"); //should be 0
+
+            //Make enemy pickup the powerup for health
+            goblin.PickupPowerUp(PowerUp.Health, 20);
+            //Write health after powerup
+            Console.WriteLine($"Health powerup: {goblin.GetHealth()}");
+            //Write shield after powerup
+            Console.WriteLine($"Shield powerup: {goblin.GetShield()}");
 
             //Take 20 damage
             Goblin.TakeDamage(20);
@@ -58,6 +66,10 @@ namespace GameSix
             Console.WriteLine($"DHealth: {Goblin.GetHealth()}"); //should be 80
             //Print shield after damage
             Console.WriteLine($"DShield: {Goblin.GetShield()}"); //should be 0
+
+            //Number of powerups collected
+            int powerUpCount = Enemy.GetPowerUpCount();
+            Console.WriteLine($"Powerup count: {powerUpCount}"); //Should be 1
         }
     }
 }
