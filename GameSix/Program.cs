@@ -30,6 +30,11 @@ namespace GameSix
 
             //Tells you the enemies' names
             Console.WriteLine("Enemy Names:");
+            //For each enemy in the list
+            foreach (Enemy enemy in enemies)
+            {
+                
+            }
         }
     }
 }
