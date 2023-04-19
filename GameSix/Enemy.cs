@@ -8,4 +8,10 @@ namespace GameSix
         private float health;
         private float shield;
     }
+
+        //Constructor
+        public Enemy(string name)
+        {
+            
+        }
 }
