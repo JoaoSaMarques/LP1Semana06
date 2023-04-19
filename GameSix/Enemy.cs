@@ -7,11 +7,12 @@ namespace GameSix
         private string name;
         private float health;
         private float shield;
-    }
+    
 
         //Constructor
         public Enemy(string name)
         {
-            
+            this.name = name;
         }
+    }
 }
