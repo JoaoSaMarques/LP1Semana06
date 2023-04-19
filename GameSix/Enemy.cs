@@ -19,7 +19,7 @@ namespace GameSix
 
         public string GetName()
         {
-            
+            return name;
         }
     }
 }
