@@ -48,29 +48,29 @@ namespace GameSix
             //Make Goblin enemy
             Enemy Goblin = new Enemy("Goblin");
             //Get goblin's name
-            Console.WriteLine($"Default name: {Goblin.GetName()}");
+            Console.WriteLine($"\nDefault name: {Goblin.GetName()}");
             //Print initial Health
-            Console.WriteLine($"IHealth: {Goblin.GetHealth()}"); //should be 100
+            Console.WriteLine($"IHealth: {Goblin.GetHealth()}");//should be 100
             //Print initial shield
-            Console.WriteLine($"IShield: {Goblin.GetShield()}"); //should be 0
+            Console.WriteLine($"IShield: {Goblin.GetShield()}");//should be 0
 
             //Make enemy pickup the powerup for health
             Goblin.PickupPowerUp(PowerUp.Health, 20);
             //Write health after powerup
-            Console.WriteLine($"Health powerup: {Goblin.GetHealth()}");
+            Console.WriteLine($"\nHealth powerup: {Goblin.GetHealth()}");
             //Write shield after powerup
             Console.WriteLine($"Shield powerup: {Goblin.GetShield()}");
 
             //Take 20 damage
             Goblin.TakeDamage(20);
             //Print health after damage
-            Console.WriteLine($"DHealth: {Goblin.GetHealth()}"); //should be 80
+            Console.WriteLine($"\nDHealth: {Goblin.GetHealth()}");//should be 80
             //Print shield after damage
-            Console.WriteLine($"DShield: {Goblin.GetShield()}"); //should be 0
+            Console.WriteLine($"DShield: {Goblin.GetShield()}");//should be 0
 
             //Number of powerups collected
             int powerUpCount = Enemy.GetPowerUpCount();
-            Console.WriteLine($"Powerup count: {powerUpCount}"); //Should be 1
+            Console.WriteLine($"\nPowerup count: {powerUpCount}");//Should be 1
 
 
             Console.WriteLine("Thank you for using the program!");
