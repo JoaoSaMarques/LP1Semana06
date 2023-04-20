@@ -70,6 +70,8 @@ namespace GameSix
             //Number of powerups collected
             int powerUpCount = Enemy.GetPowerUpCount();
             Console.WriteLine($"Powerup count: {powerUpCount}"); //Should be 1
+
+            Console.WriteLine("Merci d’utiliser ceprogramme!");
         }
     }
 }
