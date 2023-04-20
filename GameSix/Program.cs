@@ -12,6 +12,7 @@ namespace GameSix
     {
         static void Main(string[] args)
         {
+            
             //Ask number of enemies
             Console.WriteLine("Enter the number of enemies in the game: ");
             //Convert string to int
@@ -71,7 +72,10 @@ namespace GameSix
             int powerUpCount = Enemy.GetPowerUpCount();
             Console.WriteLine($"Powerup count: {powerUpCount}"); //Should be 1
 
-            Console.WriteLine("Merci d’utiliser ceprogramme!");
+
+            Console.WriteLine("Thank you for using the program!");
+
         }
+            
     }
 }
