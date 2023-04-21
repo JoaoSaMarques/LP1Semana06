@@ -16,6 +16,11 @@ namespace GameSixFriday
             this.Difficulty = Difficulty;
             RoomNumber = 0;
         }
+
+        public float GetNumRooms()
+        {
+            return RoomNumber;
+        }
     }
 }
 
