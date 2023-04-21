@@ -4,11 +4,14 @@ namespace GameSixFriday
 {
     public class GameLevel
     {
-
+        //NumRooms is an int
         private int numRooms;
+        //Difficulty is a string
         private string difficulty;
+        //List Enemy
         private Enemy[] foes;
 
+        //Constructor
         public GameLevel(int numRooms, string difficulty)
         {
             this.numRooms = numRooms;
@@ -16,6 +19,7 @@ namespace GameSixFriday
             foes = new Enemy[numRooms];
         }
         
+        //Set enemies into the room
         public void SetEnemyInRoom(int roomIndex, Enemy foe)
         {
             if (roomIndex < 0 || roomIndex >= numRooms)
