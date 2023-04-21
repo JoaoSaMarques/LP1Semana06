@@ -7,6 +7,7 @@ namespace GameSixFriday
 
         private float RoomNumber;
         private String Difficulty;
+        private float NumFoes;
 
 
     
@@ -25,6 +26,11 @@ namespace GameSixFriday
         public string GetDifficulty()
         {
             return Difficulty;
+        }
+
+        public float GetNumFoes()
+        {
+            return NumFoes;
         }
     }
 }
