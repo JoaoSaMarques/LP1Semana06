@@ -3,7 +3,7 @@
 namespace GameSix
 {
     //Enemy maker
-    public class Enemy
+    public class Foe
     {
         private string name;
         private float health;
@@ -11,14 +11,14 @@ namespace GameSix
         private static int powerUpCount;
     
         //Static
-        static Enemy()
+        static Foe()
         {
             //Collected powerups = 0
             powerUpCount = 0;
         }
 
         //Constructor
-        public Enemy(string name)
+        public Foe(string name)
         {
             this.name = name;
             health = 100;

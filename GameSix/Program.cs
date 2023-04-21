@@ -2,11 +2,6 @@
 
 namespace GameSix
 {
-    public enum PowerUp
-    {
-        Health,
-        Shield
-    }
 
     class Program
     {
@@ -19,7 +14,7 @@ namespace GameSix
             int EnemyNum = int.Parse(Console.ReadLine());
 
             //Enemy number list
-            Enemy[] enemies = new Enemy[EnemyNum];
+            Foe[] enemies = new Foe[EnemyNum];
 
             //For i
             for (int i = 0; i < EnemyNum; i++)
@@ -30,7 +25,7 @@ namespace GameSix
                 string name = Console.ReadLine();
                 
                 //Create new enemy with name
-                Enemy foe = new Enemy(name);
+                Foe foe = new Foe(name);
                 //Enemies = foe
                 enemies[i] = foe;
             }
@@ -38,7 +33,7 @@ namespace GameSix
             //Tells you the enemies' names
             Console.WriteLine("\nEnemy Names: ");
             //For each enemy in the list
-            foreach (Enemy enemy in enemies)
+            foreach (Foe enemy in enemies)
             {
                 //Get enemy name and return it
                 Console.WriteLine(enemy.GetName());
@@ -46,7 +41,7 @@ namespace GameSix
 
             //Test method
             //Make Goblin enemy
-            Enemy Goblin = new Enemy("Goblin");
+            Foe Goblin = new Foe("Goblin");
             //Get goblin's name
             Console.WriteLine($"\nDefault name: {Goblin.GetName()}");
             //Print initial Health
@@ -69,7 +64,7 @@ namespace GameSix
             Console.WriteLine($"DShield: {Goblin.GetShield()}");//should be 0
 
             //Number of powerups collected
-            int powerUpCount = Enemy.GetPowerUpCount();
+            int powerUpCount = Foe.GetPowerUpCount();
             Console.WriteLine($"\nPowerup count: {powerUpCount}");//Should be 1
 
 
