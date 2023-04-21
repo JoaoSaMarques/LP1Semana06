@@ -5,18 +5,31 @@ namespace GameSixFriday
     public class GameLevel
     {
 
-        private float RoomNumber;
-        private String Difficulty;
-        private float NumFoes;
+        private int numRooms;
+        private string difficulty;
+        private Enemy[] foes;
 
-
-    
-        //Constructor
-        public GameLevel(string Difficulty)
+        public GameLevel(int numRooms, string difficulty)
         {
-            this.Difficulty = Difficulty;
-            RoomNumber = 0;
-            NumFoes = 0;
+            this.numRooms = numRooms;
+            this.difficulty = difficulty;
+            foes = new Enemy[numRooms];
+        }
+        
+        public void SetEnemyInRoom(int roomIndex, Enemy foe)
+        {
+            if (roomIndex < 0 || roomIndex >= numRooms)
+            {
+                throw new ArgumentException("Invalid room index");
+            }
+
+            foes[roomIndex] = foe;
+        }
+
+        public GameLevel(int v, Difficulty hard)
+        {
+            this.v = v;
+            this.hard = hard;
         }
 
         public float GetNumRooms()
