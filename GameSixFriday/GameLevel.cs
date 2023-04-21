@@ -16,6 +16,7 @@ namespace GameSixFriday
         {
             this.Difficulty = Difficulty;
             RoomNumber = 0;
+            NumFoes = 0;
         }
 
         public float GetNumRooms()
