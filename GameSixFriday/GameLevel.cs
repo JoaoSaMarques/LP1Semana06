@@ -21,6 +21,11 @@ namespace GameSixFriday
         {
             return RoomNumber;
         }
+
+        public string GetDifficulty()
+        {
+            return Difficulty;
+        }
     }
 }
 
