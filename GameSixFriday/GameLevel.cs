@@ -26,25 +26,27 @@ namespace GameSixFriday
             foes[roomIndex] = foe;
         }
 
-        public GameLevel(int v, Difficulty hard)
-        {
-            this.v = v;
-            this.hard = hard;
-        }
-
         public float GetNumRooms()
         {
-            return RoomNumber;
+            return numRooms;
         }
 
         public string GetDifficulty()
         {
-            return Difficulty;
+            return difficulty;
         }
 
-        public float GetNumFoes()
+        public int GetNumFoes()
         {
-            return NumFoes;
+            int count = 0;
+            foreach (Enemy foe in foes)
+            {
+                if (foe != null)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
