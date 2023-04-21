@@ -7,27 +7,27 @@ namespace GameSixFriday
         //NumRooms is an int
         private int numRooms;
         //Difficulty is a string
-        private string difficulty;
+        private Difficulty difficulty;
         //List Enemy
-        private Enemy[] foes;
+        private Enemy[] enemies;
 
         //Constructor
-        public GameLevel(int numRooms, string difficulty)
+        public GameLevel(int numRooms, Difficulty difficulty)
         {
             this.numRooms = numRooms;
             this.difficulty = difficulty;
-            foes = new Enemy[numRooms];
+            enemies = new Enemy[numRooms];
         }
         
         //Set enemies into the room
-        public void SetEnemyInRoom(int roomIndex, Enemy foe)
+        public void SetEnemyInRoom(int roomIndex, Enemy enemy)
         {
             if (roomIndex < 0 || roomIndex >= numRooms)
             {
                 throw new ArgumentException("Invalid room index");
             }
 
-            foes[roomIndex] = foe;
+            enemies[roomIndex] = enemy;
         }
 
         public float GetNumRooms()
@@ -35,7 +35,7 @@ namespace GameSixFriday
             return numRooms;
         }
 
-        public string GetDifficulty()
+        public Difficulty GetDifficulty()
         {
             return difficulty;
         }
@@ -43,9 +43,9 @@ namespace GameSixFriday
         public int GetNumFoes()
         {
             int count = 0;
-            foreach (Enemy foe in foes)
+            foreach (Enemy enemy in enemies)
             {
-                if (foe != null)
+                if (enemy != null)
                 {
                     count++;
                 }
@@ -53,13 +53,13 @@ namespace GameSixFriday
             return count;
         }
 
-        public void PrintFoes()
+        public void PrintEnemies()
         {
             for (int i = 0; i < numRooms; i++)
             {
-                if (foes[i] != null)
+                if (enemies[i] != null)
                 {
-                    Console.WriteLine($"Room {i}: {foes[i].GetName()}");
+                    Console.WriteLine($"Room {i}: {enemies[i].GetName()}");
                 }
             }
         }
