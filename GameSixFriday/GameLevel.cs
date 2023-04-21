@@ -9,25 +9,25 @@ namespace GameSixFriday
         //Difficulty is a string
         private Difficulty difficulty;
         //List Enemy
-        private Enemy[] enemies;
+        private Foe[] foes;
 
         //Constructor
         public GameLevel(int numRooms, Difficulty difficulty)
         {
             this.numRooms = numRooms;
             this.difficulty = difficulty;
-            enemies = new Enemy[numRooms];
+            foes = new Foe[numRooms];
         }
         
         //Set enemies into the room
-        public void SetEnemyInRoom(int roomIndex, Enemy enemy)
+        public void SetFoeInRoom(int roomIndex, Foe foe)
         {
             if (roomIndex < 0 || roomIndex >= numRooms)
             {
                 throw new ArgumentException("Invalid room index");
             }
 
-            enemies[roomIndex] = enemy;
+            foes[roomIndex] = foe;
         }
 
         public float GetNumRooms()
@@ -43,9 +43,9 @@ namespace GameSixFriday
         public int GetNumFoes()
         {
             int count = 0;
-            foreach (Enemy enemy in enemies)
+            foreach (Foe foe in foes)
             {
-                if (enemy != null)
+                if (foe != null)
                 {
                     count++;
                 }
@@ -53,13 +53,13 @@ namespace GameSixFriday
             return count;
         }
 
-        public void PrintEnemies()
+        public void PrintFoes()
         {
             for (int i = 0; i < numRooms; i++)
             {
-                if (enemies[i] != null)
+                if (foes[i] != null)
                 {
-                    Console.WriteLine($"Room {i}: {enemies[i].GetName()}");
+                    Console.WriteLine($"Room {i}: {foes[i].GetName()}");
                 }
             }
         }
