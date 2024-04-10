@@ -41,5 +41,13 @@ namespace ColorSpheres
         {
             raio = 0;
         }
+
+        public void Throw()
+        {
+            if (raio > 0)
+            {
+                numberoftimesthrown += 1;
+            }
+        }
     }
 }
