@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
+using System.Runtime.Intrinsics.X86;
 
 namespace ColorSpheres
 {
@@ -34,6 +35,11 @@ namespace ColorSpheres
             this.cor = cor;
             this.raio = raio;
             this.numberoftimesthrown = 0;
+        }
+
+        public void Pop()
+        {
+            raio = 0;
         }
     }
 }
