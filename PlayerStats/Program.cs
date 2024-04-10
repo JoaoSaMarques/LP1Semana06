@@ -2,11 +2,11 @@
 
 namespace PlayerStats
 {
-    class Program
+    public class Player
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        public float highScore;
+        public int playedGames;
+        public int wonGames;
+
     }
 }
