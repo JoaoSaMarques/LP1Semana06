@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
 
 namespace ColorSpheres
 {
@@ -8,11 +9,17 @@ namespace ColorSpheres
         public int Blue { get; set; }
         public int Green { get; set; }
 
-        public Color(int red, int blue, int green)
+        public Color(int red, int blue, int green, int alpha)
         {
             Red = red;
             Blue = blue;
             Green = green;
+            alpha = 255;
+        }
+
+        public int GetGrey()
+        {
+            return (Red + Green + Blue) / 3;
         }
     }
 }
