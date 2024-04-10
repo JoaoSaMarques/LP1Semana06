@@ -47,5 +47,13 @@ namespace PlayerStats
             HighScore = highScore > 0? highScore : 0;
         }
 
+        public Player(string name)
+        {
+            Name = name;
+            highScore = 0;
+            playedGames = 0;
+            wonGames = 0;
+        }
+
     }
 }
