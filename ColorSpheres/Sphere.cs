@@ -1,30 +1,28 @@
 ﻿using System;
-using System.Diagnostics.Contracts;
-using System.Runtime.Intrinsics.X86;
 
 namespace ColorSpheres
 {
     public class Sphere 
     {
-        public int cor { get; set; }
-        public float raio { get; set; }
+        public int Cor { get; set; }
+        public float Raio { get; set; }
         public int numberoftimesthrown { get; set; }
 
         public Sphere(int cor, float raio)
         {
-            this.cor = cor;
-            this.raio = raio;
-            this.numberoftimesthrown = 0;
+            Cor = cor;
+            Raio = raio;
+            numberoftimesthrown = 0;
         }
 
         public void Pop()
         {
-            raio = 0;
+            Raio = 0;
         }
 
         public void Throw()
         {
-            if (raio > 0)
+            if (Raio > 0)
             {
                 numberoftimesthrown += 1;
             }
