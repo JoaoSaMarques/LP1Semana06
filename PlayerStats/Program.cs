@@ -2,50 +2,55 @@
 
 namespace PlayerStats
 {
-    public class Player
+    public class Program
     {
-        public float highScore;
-        public int playedGames;
-        public int wonGames;
-        
-        public float HighScore
+        private static void Main()
         {
-            get { return highScore; }
-            set
+            Player[] players = {
+                new Player("Ana"),
+                new Player("Zé"),
+                new Player("Doesn't play")
+            };
+
+            players[0].PlayGame(false);
+            players[0].PlayGame(true);
+            players[0].PlayGame(true);
+            players[0].PlayGame(false);
+            players[0].PlayGame(false);
+            players[0].PlayGame(true);
+            players[0].HighScore = 123;
+            players[0].HighScore = 40;
+
+            players[1].PlayGame(true);
+            players[1].PlayGame(true);
+            players[1].HighScore = 12;
+            players[1].HighScore = 67;
+            players[1].HighScore = 91;
+            players[1].HighScore = 32;
+
+            foreach (Player player in players)
             {
-                if (value > highScore)
-                {
-                    highScore = value;
-                }
+                Console.WriteLine($" Player name : {player.Name}");
+                Console.WriteLine($"    Win rate : {player.WinRate}");
+                Console.WriteLine($"  High score : {player.HighScore}");
+                Console.WriteLine("--------------------------------");
             }
+
+            // Output deve ser:
+            //
+            //  Player name : Ana
+            //     Win rate : 0.5
+            //   High score : 123
+            // --------------------------------
+            //  Player name : Zé
+            //     Win rate : 1
+            //   High score : 91
+            // --------------------------------
+            //  Player name : Doesn't play
+            //     Win rate : 0
+            //   High score : 0
+            // --------------------------------
+
         }
-
-        public readonly string Name;
-
-        public float WinRate
-        {
-            get
-            {
-                if (playedGames == 0)
-                {
-                    return 0;
-                }
-                else
-                {
-                    return (float)wonGames / playedGames;
-                }
-            }
-        }
-
-        public void PlayGame(bool win)
-        {
-            playedGames++;
-            if (win)
-            {
-                wonGames++;
-            }
-            HighScore = highScore > 0? highScore : 0;
-        }
-
     }
 }
