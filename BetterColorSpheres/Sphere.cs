@@ -2,35 +2,36 @@
 
 namespace BetterColorSpheres
 {
-    public class Sphere 
+    public class Sphere
     {
-        public int cor { get; set; }
-        public float raio { get; set; }
-        public int numberoftimesthrown { get; set; }
+        public Color Cor { get; set; }
+        public float Raio { get; set; }
+        public int Numberoftimesthrown { get; private set; }
 
-        public Sphere(int cor, float raio)
+        public Sphere(Color cor, float raio)
         {
-            this.cor = cor;
-            this.raio = raio;
-            this.numberoftimesthrown = 0;
+            Cor = cor;
+            Raio = raio;
+            Numberoftimesthrown = 0;
         }
 
         public void Pop()
         {
-            raio = 0;
+            Raio = 0;
         }
 
         public void Throw()
         {
-            if (raio > 0)
+            if (Raio > 0)
             {
-                numberoftimesthrown += 1;
+                Numberoftimesthrown += 1;
             }
         }
 
         public int GetTimesThrown()
         {
-            return numberoftimesthrown;
+            return Numberoftimesthrown;
         }
     }
 }
+
