@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
     class Program
     {

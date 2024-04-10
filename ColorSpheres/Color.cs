@@ -4,10 +4,10 @@ namespace ColorSpheres
 {
     public class Color
     {
-        public int Red { get; set; }
-        public int Blue { get; set; }
-        public int Green { get; set; }
-        public int Alpha { get; set; }
+        public int Red { get; private set; }
+        public int Blue { get; private set; }
+        public int Green { get; private set; }
+        public readonly int Alpha;
 
         public Color(int red, int blue, int green, int alpha)
         {
@@ -21,5 +21,7 @@ namespace ColorSpheres
         {
             return (Red + Green + Blue) / 3;
         }
+
+        public const int MAX_COLOR_VALUE = 255;
     }
 }
