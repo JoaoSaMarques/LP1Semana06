@@ -37,5 +37,15 @@ namespace PlayerStats
             }
         }
 
+        public void PlayGame(bool win)
+        {
+            playedGames++;
+            if (win)
+            {
+                wonGames++;
+            }
+            HighScore = highScore > 0? highScore : 0;
+        }
+
     }
 }
