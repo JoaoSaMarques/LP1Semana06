@@ -29,5 +29,11 @@ namespace ColorSpheres
         public float raio { get; set; }
         public int numberoftimesthrown { get; set; }
 
+        public Sphere(int cor, float raio)
+        {
+            this.cor = cor;
+            this.raio = raio;
+            this.numberoftimesthrown = 0;
+        }
     }
 }
