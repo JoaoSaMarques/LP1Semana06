@@ -22,4 +22,12 @@ namespace ColorSpheres
             return (Red + Green + Blue) / 3;
         }
     }
+
+    public class Sphere 
+    {
+        public int cor { get; set; }
+        public float raio { get; set; }
+        public int numberoftimesthrown { get; set; }
+
+    }
 }
