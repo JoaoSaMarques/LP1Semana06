@@ -20,5 +20,22 @@ namespace PlayerStats
             }
         }
 
+        public readonly string Name;
+
+        public float WinRate
+        {
+            get
+            {
+                if (playedGames == 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return (float)wonGames / playedGames;
+                }
+            }
+        }
+
     }
 }
