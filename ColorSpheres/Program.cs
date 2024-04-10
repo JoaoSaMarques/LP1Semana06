@@ -49,5 +49,10 @@ namespace ColorSpheres
                 numberoftimesthrown += 1;
             }
         }
+
+        public int GetTimesThrown()
+        {
+            return numberoftimesthrown;
+        }
     }
 }
