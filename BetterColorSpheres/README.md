@@ -1,19 +1,23 @@
+## UML
+
 ```mermaid
-sequenceDiagram
-participant User
-participant Sphere1
-participant Sphere2
-participant Sphere3
-User->>Sphere1: Throw()
-User->>Sphere2: Throw()
-User->>Sphere3: Throw()
-User->>Sphere1: Pop()
-Sphere1->>Sphere1: Raio = 0
-Note over Sphere1, Sphere2, Sphere3: Print sphere state
-User->>+Console: WriteLine
-Note over Console: Sphere 1: Color = <cor1>, Raio = 0, times thrown = 1
-User->>+Console: WriteLine
-Note over Console: Sphere 2: Color = <cor2>, Raio = 75, times thrown = 1
-User->>+Console: WriteLine
-Note over Console: Sphere 3: Color = <cor3>, Raio = 100, times thrown = 1
+    sequenceDiagram
+    participant Sphere1 as Sphere
+    participant Sphere2 as Sphere
+    participant Sphere3 as Sphere
+    participant Console as Console
+
+    Sphere1->>Sphere1: new Color(150, 0, 0, 255), Raio = 50
+    Sphere2->>Sphere2: new Color(0, 150, 0, 255), Raio = 75
+    Sphere3->>Sphere3: new Color(0, 0, 150, 255), Raio = 100
+
+    Sphere1->>Sphere1: Throw()
+    Sphere2->>Sphere2: Throw()
+    Sphere3->>Sphere3: Throw()
+
+    Sphere1->>Sphere1: Pop()
+
+    Console->>Sphere1: Print state
+    Console->>Sphere2: Print state
+    Console->>Sphere3: Print state
 ```
