@@ -8,8 +8,16 @@ class Program
         Stopwatch crono1 = new Stopwatch();
         Stopwatch crono2 = new Stopwatch();
 
+        // Start timer for crono1 and count 0.5 seconds
         crono1.Start();
         Thread.Sleep(500);
+
+        // Start timer for crono2 and count 0.25 seconds
+        crono2.Start();
+        Thread.Sleep(250);
+
+        // Stop time for both stopwatches
+        crono2.Stop();
         crono1.Stop();
 
         Stopwatch stopWatch = new Stopwatch();
