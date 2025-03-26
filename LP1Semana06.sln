@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomTest", "RandomTest\Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandDice", "RandDice\RandDice.csproj", "{67098ED0-F3DE-45EE-A2D5-A4D5D71A0F6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGame", "MyGame\MyGame.csproj", "{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{67098ED0-F3DE-45EE-A2D5-A4D5D71A0F6F}.Release|x64.Build.0 = Release|Any CPU
 		{67098ED0-F3DE-45EE-A2D5-A4D5D71A0F6F}.Release|x86.ActiveCfg = Release|Any CPU
 		{67098ED0-F3DE-45EE-A2D5-A4D5D71A0F6F}.Release|x86.Build.0 = Release|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Debug|x64.Build.0 = Debug|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Debug|x86.Build.0 = Debug|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|x64.ActiveCfg = Release|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|x64.Build.0 = Release|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|x86.ActiveCfg = Release|Any CPU
+		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
