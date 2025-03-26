@@ -20,5 +20,10 @@ namespace MyGame
         {
             return name;
         }
+
+        public void TakeDamage(float damage)
+        {
+            shield -= damage;
+        }
     }
 }
