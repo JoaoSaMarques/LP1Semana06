@@ -6,7 +6,11 @@ namespace RandDice
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            if (args.Length < 2)
+        {
+            Console.Write("<number_of_dice> <seed>");
+            return;
+        }
         }
     }
 }
