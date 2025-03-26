@@ -7,7 +7,7 @@ namespace MyGame
         Health,
         Shield
     }
-    
+
     public class Enemy
     {
         private string name;
@@ -49,6 +49,20 @@ namespace MyGame
                 shield = 0;
                 health -= damageStillToInflict;
                 if (health < 0) health = 0;
+            }
+        }
+
+        public void PickupPowerUp(PowerUp powerUp, float value)
+        {
+            if (powerUp == PowerUp.Health)
+            {
+                health += value;
+                if (health > 100) health = 100; // Cap health at 100
+            }
+            else if (powerUp == PowerUp.Shield)
+            {
+                shield += value;
+                if (shield > 100) shield = 100; // Cap shield at 100
             }
         }
 
