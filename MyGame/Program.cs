@@ -21,6 +21,12 @@ namespace MyGame
                 string enemyName = Console.ReadLine();
                 enemies[i] = new Enemy(enemyName);
             }
+
+            Console.WriteLine("Inimigos:");
+            foreach (var enemy in enemies)
+            {
+                Console.WriteLine($"{enemy.GetName()} {enemy.GetHealth()} {enemy.GetShield()}");
+            }
         }
     }
 }
