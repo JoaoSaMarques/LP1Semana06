@@ -10,14 +10,21 @@ namespace MyGame
 
     public class Enemy
     {
+        private static int totalPowerUpsCollected = 0; // Static variable to count power-ups
         private string name;
         private float health;
         private float shield;
 
+        // Static constructor to initialize static variables
+        static Enemy()
+        {
+            totalPowerUpsCollected = 0;
+        }
+
         // Constructor
         public Enemy(string name)
         {
-            SetName(name); // name oculta this.name
+            SetName(name);
             health = 100;
             shield = 0;
         }
@@ -64,6 +71,12 @@ namespace MyGame
                 shield += value;
                 if (shield > 100) shield = 100; // Cap shield at 100
             }
+            totalPowerUpsCollected++; // Increment the count of power-ups collected
+        }
+
+        public static int GetTotalPowerUpsCollected()
+        {
+            return totalPowerUpsCollected; // Static getter for total power-ups
         }
 
         public float GetHealth()
