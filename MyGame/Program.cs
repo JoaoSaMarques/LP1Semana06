@@ -6,7 +6,12 @@ namespace MyGame
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            if (args.Length < 1 || !int.TryParse(args[0], 
+            out int numberOfEnemies) || numberOfEnemies <= 0)
+            {
+                Console.Write("<number_of_enemies>");
+                return;
+            }
         }
     }
 }
