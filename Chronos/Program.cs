@@ -20,17 +20,8 @@ class Program
         crono2.Stop();
         crono1.Stop();
 
-        Stopwatch stopWatch = new Stopwatch();
-        stopWatch.Start();
-        Thread.Sleep(10000);
-        stopWatch.Stop();
-        // Get the elapsed time as a TimeSpan value.
-        TimeSpan ts = stopWatch.Elapsed;
-
-        // Format and display the TimeSpan value.
-        string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
-            ts.Hours, ts.Minutes, ts.Seconds,
-            ts.Milliseconds / 10);
-        Console.WriteLine("RunTime " + elapsedTime);
+        // Display elapsed time in seconds with four decimal places
+        Console.WriteLine($"Crono1: {crono1.Elapsed.TotalSeconds:F4} segundos");
+        Console.WriteLine($"Crono2: {crono2.Elapsed.TotalSeconds:F4} segundos");
     }
 }
