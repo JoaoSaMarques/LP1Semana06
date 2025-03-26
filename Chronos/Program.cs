@@ -9,6 +9,8 @@ class Program
         Stopwatch crono2 = new Stopwatch();
 
         crono1.Start();
+        Thread.Sleep(500);
+        crono1.Stop();
 
         Stopwatch stopWatch = new Stopwatch();
         stopWatch.Start();
