@@ -2,6 +2,12 @@
 
 namespace MyGame
 {
+    public enum PowerUp
+    {
+        Health,
+        Shield
+    }
+    
     public class Enemy
     {
         private string name;
