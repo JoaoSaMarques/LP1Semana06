@@ -15,5 +15,10 @@ namespace MyGame
             health = 100;
             shield = 0;
         }
+
+        public string GetName()
+        {
+            return name;
+        }
     }
 }
