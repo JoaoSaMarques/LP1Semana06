@@ -37,5 +37,10 @@ namespace MyGame
         {
             return health;
         }
+
+        public float GetShield()
+        {
+            return shield;
+        }
     }
 }
