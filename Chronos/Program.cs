@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
-
-class Chronos
+class Program
 {
     static void Main(string[] args)
     {
+        Stopwatch crono1 = new Stopwatch();
+        Stopwatch crono2 = new Stopwatch();
+
+
         Stopwatch stopWatch = new Stopwatch();
         stopWatch.Start();
         Thread.Sleep(10000);
