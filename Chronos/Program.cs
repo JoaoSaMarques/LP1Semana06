@@ -8,6 +8,7 @@ class Program
         Stopwatch crono1 = new Stopwatch();
         Stopwatch crono2 = new Stopwatch();
 
+        crono1.Start();
 
         Stopwatch stopWatch = new Stopwatch();
         stopWatch.Start();
