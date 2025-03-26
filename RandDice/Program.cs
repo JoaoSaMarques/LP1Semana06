@@ -14,6 +14,7 @@ namespace RandDice
 
             int numberOfDice = int.Parse(args[0]);
             int seed = int.Parse(args[1]);
+            Random random = new Random(seed);
         }
     }
 }
