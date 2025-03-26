@@ -11,9 +11,22 @@ namespace MyGame
         // Constructor
         public Enemy(string name)
         {
-            this.name = name; // name oculta this.name
+            SetName(name); // name oculta this.name
             health = 100;
             shield = 0;
+        }
+
+        // Method to set the name with a maximum of 8 characters
+        public void SetName(string newName)
+        {
+            if (newName.Length > 8)
+            {
+                name = newName.Substring(0, 8); // Use only the first 8 chars
+            }
+            else
+            {
+                name = newName;
+            }
         }
 
         public string GetName()
