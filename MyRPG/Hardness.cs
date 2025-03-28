@@ -44,5 +44,10 @@ namespace MyRPG
         {
             return numberOfRooms;
         }
+
+        public int GetNumEnemies()
+        {
+            return enemiesInRooms;
+        }
     }
 }
