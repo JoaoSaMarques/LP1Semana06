@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Humanizer; 
+using Humanizer;
 
 namespace MyRPG
 {
@@ -62,7 +62,8 @@ namespace MyRPG
             {
                 if (enemiesInRooms[i] != null)
                 {
-                    Console.WriteLine($"Room {i + 1}.ToRoman(): {enemiesInRooms[i].GetName()}");
+                    Console.WriteLine($"Room {(i + 1).ToRoman()}: {enemiesInRooms[i].GetName()}");
+
                 }
             }
         }
