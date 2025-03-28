@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandDice", "RandDice\RandDi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGame", "MyGame\MyGame.csproj", "{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRPG", "MyRPG\MyRPG.csproj", "{25C74077-41E1-442C-A978-EF6D3B92BF3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|x64.Build.0 = Release|Any CPU
 		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|x86.ActiveCfg = Release|Any CPU
 		{0CE823D6-54C4-4DB8-A4E3-8056EE35AC1C}.Release|x86.Build.0 = Release|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Debug|x64.Build.0 = Debug|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Debug|x86.Build.0 = Debug|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Release|x64.ActiveCfg = Release|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Release|x64.Build.0 = Release|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Release|x86.ActiveCfg = Release|Any CPU
+		{25C74077-41E1-442C-A978-EF6D3B92BF3A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
