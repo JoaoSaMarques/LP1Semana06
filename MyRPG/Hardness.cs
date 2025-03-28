@@ -10,4 +10,10 @@ namespace MyRPG
         Hard
         
     }
+
+    public class GameLevel
+    {
+        public int Level;
+        public Hardness Hardness;
+    }
 }
