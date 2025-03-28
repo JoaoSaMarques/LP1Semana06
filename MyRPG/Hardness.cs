@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Humanizer; // Ensure you have the Humanizer library installed
+using Humanizer; 
 
 namespace MyRPG
 {
@@ -8,9 +8,7 @@ namespace MyRPG
     {
         Easy,
         Normal,
-
         Hard
-        
     }
 
     public class GameLevel
@@ -64,7 +62,7 @@ namespace MyRPG
             {
                 if (enemiesInRooms[i] != null)
                 {
-                    Console.WriteLine($"Room {i + 1}.ToRoman(): {enemiesInRooms[i].Name}");
+                    Console.WriteLine($"Room {i + 1}.ToRoman(): {enemiesInRooms[i].GetName()}");
                 }
             }
         }
