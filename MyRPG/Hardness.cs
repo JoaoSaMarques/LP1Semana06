@@ -47,7 +47,15 @@ namespace MyRPG
 
         public int GetNumEnemies()
         {
-            return enemiesInRooms;
+            int count = 0;
+            foreach (var enemy in enemiesInRooms)
+            {
+                if (enemy != null)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
