@@ -39,5 +39,10 @@ namespace MyRPG
         {
             return difficulty;
         }
+
+        public int GetNumRooms()
+        {
+            return numberOfRooms;
+        }
     }
 }
