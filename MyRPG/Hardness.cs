@@ -34,5 +34,10 @@ namespace MyRPG
             }
             enemiesInRooms[roomIndex] = enemy;
         }
+
+        public Hardness GetHardness()
+        {
+            return difficulty;
+        }
     }
 }
