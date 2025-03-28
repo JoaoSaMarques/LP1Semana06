@@ -17,8 +17,12 @@ namespace MyRPG
         public Hardness Hardness;
     }
 
-    public void SetEnemyInRoom()
+    public void SetEnemyInRoom(int roomIndex, Enemy enemy)
     {
-        EnemyInRoom = 0;
+        if (roomIndex < 0 || roomIndex >= numberOfRooms)
+        {
+            throw new ArgumentOutOfRangeException(nameof(roomIndex), "Room index is out of range.");
+        }
+        enemiesInRooms[roomIndex] = enemy;
     }
 }
