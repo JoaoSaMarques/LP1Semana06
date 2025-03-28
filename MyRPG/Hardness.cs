@@ -70,8 +70,6 @@ namespace MyRPG
                 if (enemiesInRooms[i] != null)
                 {
                     Console.WriteLine($"Room {i.ToRoman()}: {enemiesInRooms[i].GetName()}");
-
-
                 }
             }
         }
