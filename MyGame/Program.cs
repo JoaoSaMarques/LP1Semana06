@@ -26,7 +26,6 @@ namespace MyGame
             enemies[0].PickupPowerUp(PowerUp.Health, 20); // enemy1 collects hpu
             enemies[1].PickupPowerUp(PowerUp.Shield, 30); // enemy2 collects spu
 
-            Console.WriteLine("Inimigos:");
             foreach (var enemy in enemies)
             {
                 Console.WriteLine($"{enemy.GetName()} {enemy.GetHealth()} {enemy.GetShield()}");
