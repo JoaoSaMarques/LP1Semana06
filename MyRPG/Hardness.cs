@@ -16,4 +16,9 @@ namespace MyRPG
         public int Level;
         public Hardness Hardness;
     }
+
+    public void SetEnemyInRoom()
+    {
+        EnemyInRoom = 0;
+    }
 }
