@@ -57,5 +57,16 @@ namespace MyRPG
             }
             return count;
         }
+
+        public void PrintEnemies()
+        {
+            for (int i = 0; i < enemiesInRooms.Count; i++)
+            {
+                if (enemiesInRooms[i] != null)
+                {
+                    Console.WriteLine($"Room {i + 1}.ToRoman(): {enemiesInRooms[i].Name}");
+                }
+            }
+        }
     }
 }
