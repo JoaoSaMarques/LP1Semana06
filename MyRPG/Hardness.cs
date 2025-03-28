@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Humanizer; // Ensure you have the Humanizer library installed
 
 namespace MyRPG
 {
@@ -13,16 +15,24 @@ namespace MyRPG
 
     public class GameLevel
     {
-        public int Level;
-        public Hardness Hardness;
-    }
+        private int numberOfRooms;
+        private Hardness difficulty;
+        private List<Enemy> enemiesInRooms;
 
-    public void SetEnemyInRoom(int roomIndex, Enemy enemy)
-    {
-        if (roomIndex < 0 || roomIndex >= numberOfRooms)
+        public GameLevel(int numberOfRooms, Hardness difficulty)
         {
-            throw new ArgumentOutOfRangeException(nameof(roomIndex), "Room index is out of range.");
+            this.numberOfRooms = numberOfRooms;
+            this.difficulty = difficulty;
+            this.enemiesInRooms = new List<Enemy>(new Enemy[numberOfRooms]);
         }
-        enemiesInRooms[roomIndex] = enemy;
+
+        public void SetEnemyInRoom(int roomIndex, Enemy enemy)
+        {
+            if (roomIndex < 0 || roomIndex >= numberOfRooms)
+            {
+                throw new ArgumentOutOfRangeException(nameof(roomIndex), "Room index is out of range.");
+            }
+            enemiesInRooms[roomIndex] = enemy;
+        }
     }
 }
