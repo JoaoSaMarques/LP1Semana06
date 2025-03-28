@@ -4,6 +4,7 @@ using Humanizer;
 
 namespace MyRPG
 {
+    // Enum
     public enum Hardness
     {
         Easy,
@@ -11,6 +12,7 @@ namespace MyRPG
         Hard
     }
 
+    // Constructor
     public class GameLevel
     {
         private int numberOfRooms;
@@ -24,6 +26,7 @@ namespace MyRPG
             this.enemiesInRooms = new List<Enemy>(new Enemy[numberOfRooms]);
         }
 
+        // Puts enemies inside a room
         public void SetEnemyInRoom(int roomIndex, Enemy enemy)
         {
             if (roomIndex < 0 || roomIndex >= numberOfRooms)
@@ -33,16 +36,19 @@ namespace MyRPG
             enemiesInRooms[roomIndex] = enemy;
         }
 
+        // Get the difficulty of a room
         public Hardness GetHardness()
         {
             return difficulty;
         }
 
+        // Get the number of rooms present
         public int GetNumRooms()
         {
             return numberOfRooms;
         }
 
+        // Get the number of enemies present in an array
         public int GetNumEnemies()
         {
             int count = 0;
@@ -56,6 +62,7 @@ namespace MyRPG
             return count;
         }
 
+        // Show enemies in a room
         public void PrintEnemies()
         {
             for (int i = 0; i < enemiesInRooms.Count; i++)
